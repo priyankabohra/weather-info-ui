@@ -1,0 +1,20 @@
+<html>
+  <div class="heading">
+    <h2> How's the weather in...</h2>
+  </div>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form">
+      <input formControlName="cityName" placeholder="Search City" name="cityName" class="form-control" id="cityName">
+      <button mat-raised-button color="primary"><mat-icon>add</mat-icon></button>
+    </div>
+  </form>
+
+  <div class="row" *ngFor="let weather of weathers; index as i;">
+      <div class="row-div">
+        <span style="color: black;"> {{ weather.weather }} </span>
+        <span style="color: black;"> {{ weather.temperature }} </span>
+        <span style="color: black;"> {{ weather.country }} </span>
+        <span style="color: black;"> {{ weather.city }} </span>
+      </div>
+  </div>
+</html>

@@ -1,0 +1,14 @@
+.footer{
+   background-image:url('src/assets/images/Footer.png');
+   padding: 35px;
+   margin:0;
+   position:absolute;
+   width:100%;
+   bottom:0;
+   display: flex;
+}
+
+
+.copyright {
+  margin-left : 60px;
+}
